@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>기업 웹사이트</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- 메인 섹션 -->
+    <main>
+        <!-- 메인 풀스크린 비주얼 영역 -->
+        <section class="main-visual-fullscreen">
+            <div class="main-content" style="z-index: 2; position: relative;">
+                <div class="main-design">
+                    <!-- 헤더 로고 -->
+                    <div class="header-logo-container">
+                        <img src="images/header-design.png" alt="로고" class="header-logo-image">
+                    </div>
+                    <div class="design-images">
+                        <div class="image-placeholder">메인 이미지</div>
+                    </div>
+                </div>
+                <!-- 버튼을 독립적으로 배치 -->
+                <button class="scroll-to-form-btn" onclick="document.querySelector('.application-form').scrollIntoView({behavior: 'smooth'})">
+                    <div class="btn-text">
+                        급등주 종목 무료추천 받기
+                    </div>
+                </button>
+            </div>
+        </section>
+        
+        <!-- 신청 섹션 -->
+        <section class="application-section-fullscreen">
+            <div class="container">
+                <div class="application-section">
+                    <div class="application-header">
+                        <h1 class="animated-title">
+                            <span class="title-text">내일의</span>
+                            <span class="highlight-red">급등주</span>
+                            <span class="title-text">종목 무료추천</span>
+                            <span class="highlight-red">'5일간 무료'</span>
+                        </h1>
+                    </div>
+                    <!-- 신청 폼 -->
+                    <div class="application-form">
+                        <form class="signup-form">
+                            <div class="form-group">
+                                <label for="name">이름 *</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="contact">연락처 *</label>
+                                <input type="tel" id="contact" name="contact" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="investment-type">투자유형 *</label>
+                                <select id="investment-type" name="investment-type" required>
+                                    <option value="">선택하세요</option>
+                                    <option value="단타">단타</option>
+                                    <option value="스윙">스윙</option>
+                                    <option value="장기">장기</option>
+                                    <option value="원금회복">원금회복</option>
+                                    <option value="왕초보">왕초보</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="investment-amount">투자금액 *</label>
+                                <select id="investment-amount" name="investment-amount" required>
+                                    <option value="">선택하세요</option>
+                                    <option value="3천이하">3천이하</option>
+                                    <option value="3천~1억">3천~1억</option>
+                                    <option value="1억이상">1억이상</option>
+                                    <option value="주식계좌없음">주식계좌없음</option>
+                                </select>
+                            </div>
+                            <div class="privacy-agreement">
+                                <label>
+                                    <input type="checkbox" required>
+                                    개인정보 처리방침 동의
+                                </label>
+                            </div>
+                            <button type="submit" class="submit-button">급등주 종목 무료추천 받기</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 상승구간 포착 섹션 -->
+        <section class="rising-section">
+            <div class="container">
+                <div class="rising-header">
+                    <img src="images/rising-title.png" alt="요즘같이 힘든 하락장에서도 상승구간 포착!" class="rising-title-image">
+                </div>
+                <div class="rising-grid">
+                    <div class="rising-item">
+                        <h3>업계 최고</h3>
+                        <p>어떤장에서도 수익률로 증명된<br>실전 애널리스트</p>
+                    </div>
+                    <div class="rising-item">
+                        <h3>종목 추천</h3>
+                        <p>단타+중기+장기<br>종목별 정확한 타점</p>
+                    </div>
+                    <div class="rising-item">
+                        <h3>정보 수집</h3>
+                        <p>실시간 뉴스+수급+차트 기반,<br>종목 별 매수시점 자동 포착</p>
+                    </div>
+                    <div class="rising-item">
+                        <h3>1:1 맞춤서비스</h3>
+                        <p>전문가 1:1 피드백으로<br>실전 대응까지 완벽지원</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4번째 섹션 -->
+        <section class="fourth-section">
+            <div class="">
+                <div class="row fourth-content">
+                    <!-- 4-bg.png가 배경으로 적용됨 -->
+                     <img src="images/4-bg.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        <!-- 주식투자 문제점 섹션 -->
+        <section id="problem" class="problem-section">
+            <div class="container">
+                <h2>주식투자 왜 나만 수익을 못보는걸까?</h2>
+                <div class="problem-grid">
+                    <div class="problem-item">
+                        <div class="problem-icon">📉</div>
+                        <h3>정보 부족</h3>
+                        <p>시장 동향과 종목 분석 정보가 부족해서 좋은 기회를 놓치고 있습니다.</p>
+                    </div>
+                    <div class="problem-item">
+                        <div class="problem-icon">⏰</div>
+                        <h3>타이밍 실패</h3>
+                        <p>매수/매도 타이밍을 놓쳐서 수익을 보지 못하고 있습니다.</p>
+                    </div>
+                    <div class="problem-item">
+                        <div class="problem-icon">💸</div>
+                        <h3>손실 누적</h3>
+                        <p>체계적인 투자 전략 없이 손실만 누적되고 있습니다.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- 후기 섹션 -->
+        <section id="reviews" class="reviews-section">
+            <div class="container">
+                <h2 class="reviews-title">
+                    <span class="title-main">무료구독자 분들의</span>
+                    <span class="title-highlight">생생한 실제후기</span>
+                </h2>
+                <div class="reviews-grid">
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="header-content">
+                                <div class="avatar-icon">
+                                    <img src="images/person1.png" alt="후기 작성자" class="avatar-image">
+                                </div>
+                                <div class="review-info">
+                                    <h3>안정적인 삶을 찾았어요</h3>
+                                    <div class="user-info">
+                                        <span class="user-name">김*수</span>
+                                        <span class="user-age">35세</span>
+                                        <span class="user-investment">초기투자금 1,200만원</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="review-content">
+                            <p>늘 혼자서 주식을 하다가 속는셈 치고 무료추천을 받고 우연히 큰 수익을 보게되어 집중관리방 무료구독후 안정적인 수익을 꾸준히 내고 있습니다.</p>
+                        </div>
+                    </div>
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="header-content">
+                                <div class="avatar-icon">
+                                    <img src="images/person2.png" alt="후기 작성자" class="avatar-image">
+                                </div>
+                                <div class="review-info">
+                                    <h3>손실봤던거 모두 복구했어요!</h3>
+                                    <div class="user-info">
+                                        <span class="user-name">박*영</span>
+                                        <span class="user-age">27세</span>
+                                        <span class="user-investment">초기투자금 800만원</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="review-content">
+                            <p>칼같은 익절과 손절, 몇일만에 손실본거 복구했어요! 상담도 완전 친절하고 내것처럼 해주세요. 이대로 쭉 앞으로도 잘 부탁드립니다.</p>
+                        </div>
+                    </div>
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="header-content">
+                                <div class="avatar-icon">
+                                    <img src="images/person3.png" alt="후기 작성자" class="avatar-image">
+                                </div>
+                                <div class="review-info">
+                                    <h3>아무것도 모르는 주린이에서 전문가로!</h3>
+                                    <div class="user-info">
+                                        <span class="user-name">이*수</span>
+                                        <span class="user-age">58세</span>
+                                        <span class="user-investment">초기투자금 2,500만원</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="review-content">
+                            <p>아이들만 케어하던 주부로서 무슨일을 해야할지 막막할때 단타로 조금씩 용돈벌이를 하다가 수직 교육까지 받으며 투자를 하니이제 전문가가 다되었어요</p>
+                        </div>
+                    </div>
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="header-content">
+                                <div class="avatar-icon">
+                                    <img src="images/person4.png" alt="후기 작성자" class="avatar-image">
+                                </div>
+                                <div class="review-info">
+                                    <h3>다른 업체와는 달라요</h3>
+                                    <div class="user-info">
+                                        <span class="user-name">최*영</span>
+                                        <span class="user-age">40세</span>
+                                        <span class="user-investment">초기투자금 1,800만원</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="review-content">
+                            <p>타업체 이용하다가 큰 손실이 났는데 계속 홀딩중이라 답답해서 찾은 업체.왜 빨리 무료구독을 안했었는지 후회했습니다. 이제는 안심이에요!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 신청현황 섹션 -->
+        <section id="applications" class="applications-section">
+            <div class="container">
+                <h2>무료체험 신청현황</h2>
+                <div class="applications-list" id="applicationsList">
+                    <div class="application-item">
+                        <span class="applicant">김**ㅣ상담종목 : 삼성전자ㅣ상담내용 : <span class="lock-icon" onclick="alert('비공개 글 입니다')" title="클릭하여 상세보기">🔒</span></span>
+                        <span class="status">대기중</span>
+                    </div>
+                    <div class="application-item">
+                        <span class="applicant">박**ㅣ상담종목 : 엔비디아ㅣ상담내용 : <span class="lock-icon" onclick="alert('비공개 글 입니다')" title="클릭하여 상세보기">🔒</span></span>
+                        <span class="status">대기중</span>
+                    </div>
+                    <div class="application-item">
+                        <span class="applicant">이**ㅣ상담종목 : 테슬라ㅣ상담내용 : <span class="lock-icon" onclick="alert('비공개 글 입니다')" title="클릭하여 상세보기">🔒</span></span>
+                        <span class="status">대기중</span>
+                    </div>
+                    <div class="application-item">
+                        <span class="applicant">최**ㅣ상담종목 : AMDㅣ상담내용 : <span class="lock-icon" onclick="alert('비공개 글 입니다')" title="클릭하여 상세보기">🔒</span></span>
+                        <span class="status">대기중</span>
+                    </div>
+                    <div class="application-item">
+                        <span class="applicant">정**ㅣ상담종목 : 인텔ㅣ상담내용 : <span class="lock-icon" onclick="alert('비공개 글 입니다')" title="클릭하여 상세보기">🔒</span></span>
+                        <span class="status">대기중</span>
+                    </div>
+                    <div class="application-item">
+                        <span class="applicant">강**ㅣ상담종목 : 엔케이ㅣ상담내용 : <span class="lock-icon" onclick="alert('비공개 글 입니다')" title="클릭하여 상세보기">🔒</span></span>
+                        <span class="status completed">상담완료</span>
+                    </div>
+                    <div class="application-item">
+                        <span class="applicant">조**ㅣ상담종목 : KR모터스ㅣ상담내용 : <span class="lock-icon" onclick="alert('비공개 글 입니다')" title="클릭하여 상세보기">🔒</span></span>
+                        <span class="status completed">상담완료</span>
+                    </div>
+                    <div class="application-item">
+                        <span class="applicant">윤**ㅣ상담종목 : 동양철관ㅣ상담내용 : <span class="lock-icon" onclick="alert('비공개 글 입니다')" title="클릭하여 상세보기">🔒</span></span>
+                        <span class="status completed">상담완료</span>
+                    </div>
+                    <div class="application-item">
+                        <span class="applicant">임**ㅣ상담종목 : 인디에프ㅣ상담내용 : <span class="lock-icon" onclick="alert('비공개 글 입니다')" title="클릭하여 상세보기">🔒</span></span>
+                        <span class="status completed">상담완료</span>
+                    </div>
+                    <div class="application-item">
+                        <span class="applicant">한**ㅣ상담종목 : 대한조선ㅣ상담내용 : <span class="lock-icon" onclick="alert('비공개 글 입니다')" title="클릭하여 상세보기">🔒</span></span>
+                        <span class="status completed">상담완료</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+    <!-- 푸터 -->
+    <footer class="footer" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <span class="back-to-top">맨위로 이동</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html> 
