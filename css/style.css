@@ -700,11 +700,16 @@ section h2 {
     height: 110vh;
     background-image: url('../images/4-bg.png');
     background-size: cover;
-    background-position: center;
+    background-position: center bottom;
     background-repeat: no-repeat;
     background-color: #000;
     position: relative;
     overflow: hidden;
+}
+
+/* 모바일 전용 이미지 - 기본적으로 숨김 */
+.fourth-section-mobile-img {
+    display: none;
 }
 
 .fourth-section::before {
@@ -1012,11 +1017,23 @@ section h2 {
     }
     
     .fourth-section {
-        height: 100%;
-        min-height: 100%;
-        background-size: contain;
-        background-position: center;
-        background-color: #000;
+        width: 100%;
+        height: auto;
+        background-image: none;
+        background-color: transparent;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: auto;
+    }
+    
+    .fourth-section-mobile-img {
+        display: block;
+        width: 100%;
+        height: auto;
+        object-fit: contain;
         margin: 0;
         padding: 0;
     }
@@ -1078,6 +1095,6 @@ section h2 {
     }
     
     .rising-item p {
-        font-size: 1rem;
+        font-size: 0.9em;
     }
 }
