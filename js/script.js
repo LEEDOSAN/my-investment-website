@@ -4,7 +4,7 @@ const FORM_FIELDS = {
     contact: { label: '연락처', type: 'tel' },
     'investment-type': { label: '투자유형', type: 'select', options: ['단타', '스윙', '장기', '원금회복', '왕초보'] },
     'investment-amount': { label: '투자금액', type: 'select', options: ['3천이하', '3천~1억', '1억이상', '주식계좌없음'] },
-    'inflow-path': { label: '유입경로', type: 'select', options: ['구글검색', '네이버검색', '카카오톡', '인스타그램', '페이스북', '유튜브', '지인추천', '온라인광고', '블로그', '커뮤니티', '기타'] }
+    'inflow-path': { label: '유입경로', type: 'select', options: ['포털사이트 광고', '페이스북', '유튜브채널', '인스타그램', '카카오톡 및 문자 수신'] }
 };
 
 // 폼 제출 처리 (데이터 저장 기능 추가)
@@ -27,6 +27,10 @@ if (signupForm) {
         
         // 로컬 스토리지에 저장
         saveApplicationData(formData);
+        
+        // 디버깅용 로그
+        console.log('폼 데이터 저장됨:', formData);
+        console.log('현재 저장된 모든 데이터:', JSON.parse(localStorage.getItem('applications') || '[]'));
         
         alert('무료체험이 성공적으로 신청되었습니다!');
         this.reset();
